@@ -5,19 +5,19 @@ require('dotenv').config();
 let path =require('path');
 let mongoose=require("mongoose");
 let model =require("./DB");
-
+app.use(ex.static(path.join(__dirname,"public")))
 mongoose.connect(process.env.DBURL).then(console.log("connected to DATABASE - " + process.env.DBURL));
 
 app.get("/",(req,res)=>{
-    res.sendFile(__dirname+ '/index.html');
+    res.sendFile(__dirname+ '/public/index.html');
    // res.send(__dirname + '/index.html');
-    console.log(__dirname + '/index.html');
+   // console.log(__dirname + '/index.html');
 
 })
 
 app.post('/',async(req,res)=>{
    
-    res.sendFile(__dirname + '/index.html')
+    res.sendFile(__dirname + '/public/index.html')
     
     let Model= new model(req.body);
     await Model.save();       
