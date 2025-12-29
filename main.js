@@ -4,10 +4,16 @@ app.use(ex.json());
 require('dotenv').config();
 
 let mongoose=require("mongoose");
-mongoose.connect(process.env.DBURL).then(console.log("connected to DATABASE"))
-app.post('/',(req,res)=>{
+let model =require("./DB");
+mongoose.connect(process.env.DBURL).then(console.log("connected to DATABASE - " + process.env.DBURL));
+app.post('/',async(req,res)=>{
+ 
+    
+    let Model= new model(req.body);
+    await Model.save();      
+
     res.send("hello");
 })
 app.listen(8000,()=>{
-    console.log("connected to SERVER")
+    console.log("connected to SERVER - "  + process.env.PORT);
 });
