@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* Reset some default styles
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@
   font-family: Arial, sans-serif;
 }
 
-/* Header */
+/* Header 
 header {
   background-color: #4CAF50;
   color: white;
@@ -37,7 +37,7 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Main content */
+/* Main content 
 main {
   width: 90%;
   margin: 40px auto;
@@ -54,7 +54,7 @@ main {
   color: #555;
 }
 
-/* Cards */
+/* Cards 
 .cards {
   display: flex;
   gap: 20px;
@@ -85,11 +85,57 @@ main {
   color: #666;
 }
 
-/* Footer */
+/* Footer 
 footer {
   background-color: #333;
   color: white;
   padding: 15px 0;
   text-align: center;
   margin-top: 50px;
-}
+} */
+ div.incarda {
+ width: 90px;
+ position: relative;
+ /* bottom: 10px; */
+
+ }
+  div.incardf {
+
+ width: 90px;
+  position: relative;
+margin-top: -105px; 
+right: -210px;
+
+ }
+ div.incardfi {
+
+ width: 90px;
+  position:relative;
+margin-top: -120px; 
+right: -210px;
+ }
+ div.incarda-15 {
+   width: 90px;
+ position: absolute;
+ bottom: 20px;
+ }
+  div.incardf-15 {
+   width: 90px;
+ position: absolute;
+ bottom: 20px;
+ right: 20px;
+ }
+
+  div.incarda-air {
+   width: 90px;
+ position: relative;
+ bottom: 0px;
+ margin-top: 50px;
+ }
+ div.incardf-air {
+   width: 90px;
+ position: absolute;
+ bottom: 20px;
+   right: 20px;
+ }
+

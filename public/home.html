@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -16,7 +16,7 @@
           <li><a href="#">Home</a></li>
           <li><a href="#">Profile</a></li>
           <li><a href="#">Settings</a></li>
-          <li id="logout"><a href="/logout">Logout</a></li>
+          <li id="logout" > <a href="/" >Logout</a></li>
         </ul>
       </nav>
     </div>
@@ -50,4 +50,392 @@
 
 </body>
 <script src="main.js"></script>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartPick Deals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <style >
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: #1e88e5;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 32px;
+        }
+
+        .hero button {
+            padding: 12px 25px;
+            font-size: 16px;
+            background: #1e88e5;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .section {
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 1000px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+            align-items: center;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .card button {
+            background: #43a047;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        .disclaimer {
+            font-size: 13px;
+            color: #555;
+            margin-top: 20px;
+        }
+         
+         
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>SmartPick Deals</h2>
+    <nav>
+        <a href="/home">Home</a>
+        <a href="#">Reviews</a>
+        <a href="#">Top Deals</a>
+        <a href="#">Contact</a>
+         <a href="/">Logout</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Find the Best Products Before You Buy</h1>
+    <p>Honest reviews, simple comparisons, and trusted recommendations.</p>
+    <button>View Top Deals</button>
+</section>
+
+<section class="section">
+    <h2>🔥 Top Recommended Products</h2>
+
+    <div class="products">
+      <!-- 1 -->
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/71d7rfSl0wL._AC_UL640_FMwebp_QL65_.jpg" alt="iPhone-15" width="170px">
+            <h3>Apple iPhone 15 (128 GB) - Blue</h3>
+            <p>⭐⭐⭐⭐⭐ (4.5/5)</p>
+            <div class="incarda-15">
+             <p>amazon price <br><b>₹54,790  </b></p>
+             <a href="https://www.amazon.in/Apple-iPhone-15-128-GB/dp/B0CHX2F5QT/ref=sxin_14_pa_sp_search_thematic_sspa?content-id=amzn1.sym.0629fcb0-94ed-4eba-9abe-6c93c227c465%3Aamzn1.sym.0629fcb0-94ed-4eba-9abe-6c93c227c465&crid=348K5VT58ZR3B&cv_ct_cx=iphone%2B17&keywords=iphone%2B17&pd_rd_i=B0CHX2F5QT&pd_rd_r=46b548b7-ef73-4ed5-8686-d7499ac16ba5&pd_rd_w=yQh4i&pd_rd_wg=q58Rc&pf_rd_p=0629fcb0-94ed-4eba-9abe-6c93c227c465&pf_rd_r=4SMY7PHPF72ES5X3C0MZ&qid=1767199544&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=iphone%2B1%2Caps%2C501&sr=1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons&aref=bW6uEpOBEL&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1">
+            <button>Buy Now</button>
+             </a>  
+          </div>
+             <div class="incardf-15">
+             <p>Flipkart price <br><b>₹51,999  </b></p>
+             <a href="https://www.flipkart.com/apple-iphone-15-blue-128-gb/p/itmbf14ef54f645d?pid=MOBGTAGPAQNVFZZY&lid=LSTMOBGTAGPAQNVFZZYCQQXYH&marketplace=FLIPKART&q=iphone+15&store=tyy%2F4io&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_2_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_7_na_na_ps&fm=Search&iid=d86af6d0-0ed1-423d-9b2b-4ff526d66a45.MOBGTAGPAQNVFZZY.SEARCH&ppt=sp&ppn=sp&ssid=8zj8yf1s280000001767199762990&qH=2f54b45b321e3ae5">
+            <button>Buy Now</button>
+             </a>
+          </div>
+        </div>
+      <!-- 2 -->
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/618vU2qKXQL._AC_UY436_FMwebp_QL65_.jpg" alt="Phone" width="170px">
+            <h3>iPhone 17 Pro 256 GB: 15.93 cm (6.3″) Display with Promotion up to 120Hz, A19 Pro Chip, Breakthrough Battery Life, Pro Fusion Camera System with Center Stage Front Camera; Deep Blue</h3>
+            <p>⭐⭐⭐⭐☆ (4.6/5)</p>
+          
+            
+            <div class="incarda">
+              <p>amazon price <br><b>₹1,34,900 </b></p>
+              <a href="https://www.amazon.in/iPhone-Pro-256-Promotion-Breakthrough/dp/B0FQFYYPZF/ref=sr_1_2_sspa?crid=1B1GGNWKJ29E5&dib=eyJ2IjoiMSJ9.cuVgPXRW_7pQmQLbD-v7vIS3JdBPGOKcjAPB3MZvpyqHgGPUFR3E2klMKRu1PXiDSO4FI9lcprAKznm2dnkZoSzs0jPSe7ISpFL2vN7qtQhETcw1Ipz5hA0gBtsFADO7PysKLpTHJcZ4eAMRfm6e3ukM7770rfdaVwv_WwmasTD--UhB5E9ee2VbeDZgDRNQXNkF4werFL329XO5SSeMpuJQnLd3ZMmFGfHYEFMPhXY.uN3yBl8e8VGco2PohNwrGvZOAmA-RIEM-jr3Xlisktc&dib_tag=se&keywords=iphone&qid=1767196385&sprefix=iphon%2Caps%2C483&sr=8-2-spons&aref=wxc0OTgSPc&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">
+            <button>Buy Now</button></a>
+            </div>
+
+            <div class="incardf-15">
+             <p>Flipkart price <br><b>₹1,34,900</b></p>
+             <a href="https://www.flipkart.com/apple-iphone-17-pro-deep-blue-256-gb/p/itm239d0b996d7f0?pid=MOBHFN6YV7GYZHSM&lid=LSTMOBHFN6YV7GYZHSMOB0WBP&marketplace=FLIPKART&q=iphone+17+pro&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=3800fbae-e133-4e55-b0c0-c44a167bd09e.MOBHFN6YV7GYZHSM.SEARCH&ppt=sp&ppn=sp&ssid=wfc2vif69c0000001767196948838&qH=c765de6c3925bba3">
+              <button id="fi">Buy Now</button>
+             </a>
+            </div>
+        </div>
+
+
+
+   
+         <!-- 3 -->
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/711VzeHZAPL._AC_UY436_FMwebp_QL65_.jpg" alt="Mattress" width="170px" >
+            <h3>iPhone 16 Plus 256 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; Teal
+
+</h3>
+            <p>⭐⭐⭐⭐☆ (4.5/5)</p>
+            
+            <div class="incarda-15">
+              <p>amazon price <b>₹85,900  </b></p>
+              <a href="https://www.amazon.in/iPhone-Plus-16-256-GB/dp/B0DGJ8QKSF/ref=sr_1_1_sspa?crid=22LKGKYB7EYVM&dib=eyJ2IjoiMSJ9.xHa_nMHRnLwyoqxDtZFNGcovZ19sm6Ada4ZYmLpIFC6yFkdoS8PjidHEPeSoJT7uj2L13O5IRA83uOY_IjYWB8mNnerTuQeqRQZQrxIwS3w3Yn2khQpLoqH4UF-eh3szWgafiLWRgkkkq6bChdJF79M7sT-a9dKN7hKSg-zp4ErWNxpKJyGn6tL3sqphz-4gWqUfz91ixTXoldOQkOW0BssZ7WHSw_FO2n8NTnNqvvE.ECVB3VdooecPqyLy2ncEfG9-R5GRaovDVvaV2KLVZto&dib_tag=se&keywords=iphone%2B16%2Bplus&qid=1767209148&sprefix=iphone%2B16%2Bplu%2Caps%2C500&sr=8-1-spons&aref=BjhuTZ1tgC&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">
+            <button>Buy Now</button>
+              </a>
+
+          
+          </div>
+          <div class="incardf-15">
+            <p>Flipkart price <b>₹84,900</b></p>
+            <a href="https://www.flipkart.com/apple-iphone-16-plus-teal-256-gb/p/itmc838d56fd8d50?pid=MOBH4DQFASMZ3YKT&lid=LSTMOBH4DQFASMZ3YKT62NU5X&marketplace=FLIPKART&q=iPhone%2016%20Plus%20256%20GB&sattr[]=color&sattr[]=storage&st=color">
+            <button>Buy Now</button>
+            </a>
+          </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+         <!-- 4 -->
+
+        </div>
+
+          <div class="card">
+          <img src="https://m.media-amazon.com/images/I/61Ce-6B6x+L._SX679_.jpg" alt="iPhone-air" width="250px">
+            <h3>iPhone Air 256 GB: Thinnest iPhone Ever, 16.63 cm (6.5″) Display with Promotion up to 120Hz, Powerful A19 Pro Chip, Center Stage Front Camera, All-Day Battery Life; Sky Blue</h3>
+            <p>⭐⭐⭐⭐⭐ (4.5/5)</p>
+            <div class="incarda-air">
+             <p>amazon price <br><b>₹1,14,900   </b></p>
+             <a href="https://www.amazon.in/iPhone-Air-256-GB-Promotion/dp/B0FQFJGP8S/ref=pd_sbs_d_sccl_1_2/523-5332472-7655150?pd_rd_w=sXrFg&content-id=amzn1.sym.6d240404-f8ea-42f5-98fe-bf3c8ec77086&pf_rd_p=6d240404-f8ea-42f5-98fe-bf3c8ec77086&pf_rd_r=DYTTGJ4EN7TVSJPQ3FA0&pd_rd_wg=1n2iL&pd_rd_r=2e068e2c-2dbf-41dc-8e13-33b015fdf70f&pd_rd_i=B0FQFJGP8S&th=1">
+            <button>Buy Now</button>
+             </a>  
+          </div>
+             <div class="incardf-air">
+             <p>Flipkart price <br><b>₹1,14,900  </b></p>
+             <a href="https://www.flipkart.com/apple-iphone-15-blue-128-gb/p/itmbf14ef54f645d?pid=MOBGTAGPAQNVFZZY&lid=LSTMOBGTAGPAQNVFZZYCQQXYH&marketplace=FLIPKART&q=iphone+15&store=tyy%2F4io&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_2_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_7_na_na_ps&fm=Search&iid=d86af6d0-0ed1-423d-9b2b-4ff526d66a45.MOBGTAGPAQNVFZZY.SEARCH&ppt=sp&ppn=sp&ssid=8zj8yf1s280000001767199762990&qH=2f54b45b321e3ae5">
+            <button>Buy Now</button>
+             </a>
+          </div>
+        </div>
+
+
+
+
+      
+
+
+        <!-- 5 -->
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/41SIlMzDIzL._SY300_SX300_QL70_FMwebp_.jpg" alt="Phone" width="250px">
+            <h3>Samsung Galaxy S24 5G AI Smartphone (Marble Gray, 8GB, 128GB Storage)</h3>
+            <p>⭐⭐⭐⭐☆ (4.6/5)</p>
+          
+            
+            <div class="incarda-15">
+              <p>amazon price <br><b>₹1,34,900 </b></p>
+              <a href="https://www.amazon.in/iPhone-Pro-256-Promotion-Breakthrough/dp/B0FQFYYPZF/ref=sr_1_2_sspa?crid=1B1GGNWKJ29E5&dib=eyJ2IjoiMSJ9.cuVgPXRW_7pQmQLbD-v7vIS3JdBPGOKcjAPB3MZvpyqHgGPUFR3E2klMKRu1PXiDSO4FI9lcprAKznm2dnkZoSzs0jPSe7ISpFL2vN7qtQhETcw1Ipz5hA0gBtsFADO7PysKLpTHJcZ4eAMRfm6e3ukM7770rfdaVwv_WwmasTD--UhB5E9ee2VbeDZgDRNQXNkF4werFL329XO5SSeMpuJQnLd3ZMmFGfHYEFMPhXY.uN3yBl8e8VGco2PohNwrGvZOAmA-RIEM-jr3Xlisktc&dib_tag=se&keywords=iphone&qid=1767196385&sprefix=iphon%2Caps%2C483&sr=8-2-spons&aref=wxc0OTgSPc&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">
+            <button>Buy Now</button></a>
+            </div>
+
+            <div class="incardf-15">
+             <p>Flipkart price <br><b>₹1,34,900</b></p>
+             <a href="https://www.flipkart.com/apple-iphone-17-pro-deep-blue-256-gb/p/itm239d0b996d7f0?pid=MOBHFN6YV7GYZHSM&lid=LSTMOBHFN6YV7GYZHSMOB0WBP&marketplace=FLIPKART&q=iphone+17+pro&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=3800fbae-e133-4e55-b0c0-c44a167bd09e.MOBHFN6YV7GYZHSM.SEARCH&ppt=sp&ppn=sp&ssid=wfc2vif69c0000001767196948838&qH=c765de6c3925bba3">
+              <button id="fi">Buy Now</button>
+             </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+         <!-- 6 -->
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/61ngWlk3zjL._AC_UY436_FMwebp_QL65_.jpg" alt="Oneplus-13s" width="180px" >
+            <h3>OnePlus 13s | Snapdragon 8 Elite | Best Battery Life Ever on a Compact Phone | Studio-Grade Detail with Triple AF Cameras | Lifetime Display Warranty | 12GB+256GB | Pink Satin
+
+</h3>
+            <p>⭐⭐⭐⭐☆ (4.5/5)</p>
+            
+            
+            <div class="incarda-15">
+              <p>amazon price <b>₹54,999   </b></p>
+            <button>Buy Now</button>
+
+
+          
+          </div>
+          <div class="incardf-15">
+            <p>Flipkart price <b>₹55,499</b></p>
+            <button>Buy Now</button>
+          </div>  
+          
+
+
+
+         
+
+
+
+
+
+          <!-- 7 -->
+
+        </div>
+
+          <div class="card">
+          <img src="https://m.media-amazon.com/images/I/61OtOTTpzxL._SX679_.jpg" alt="iPhone-air" width="250px">
+            <h3>OnePlus Nord 5 | Snapdragon 8s Gen 3 | Stable 144FPS Gaming | Dual 50MP Flagship Camera | Powered by OnePlus AI | 8GB + 256GB | Dry Ice</h3>
+            <p>⭐⭐⭐⭐⭐ (4.3/5)</p>
+            <div class="incarda-15">
+             <p>amazon price <br><b>₹33,999  </b></p>
+             <a href="https://www.amazon.in/OnePlus-Snapdragon-Stable-Flagship-Powered/dp/B0FCMKSP7V/ref=sr_1_13?crid=1GGCCPT1944UO&dib=eyJ2IjoiMSJ9.xL82DJGfaBhrnF7kGv8wPzzH9g7MugifNAfAxnP3piMAPulqCyRDr0JdPHWUx_Xyjt8x-mO20c8UlXbI-TrdCFkZFf5pv1j81hFWbk2fk0SkrEoEWq_yl3HpTSCpg08BFXKiCQOFz5bVw1-tGqbIk4VvsFe-2Mssk4JLgeESdkyPpNYwMRuQZQ00zgMhARH87EYE-vuRuTPkXkUFU74omWTXagSrvcFhl-iT1fQt-FU.6ScrPse4Ch-NBL9p1y47ZxwANN6Vu-IUfGpL4YjTS6A&dib_tag=se&keywords=iphone%2B14&qid=1767204003&sprefix=iphone%2B17%2Caps%2C966&sr=8-13&th=1">
+            <button>Buy Now</button>
+             </a>  
+          </div>
+             <div class="incardf-air">
+             <p>Flipkart price <br><b>₹37,417 </b></p>
+             <a href="https://www.flipkart.com/oneplus-nord-5-5g-dry-ice-256-gb/p/itme333f56ade583?pid=MOBHDVHGYJM6EEHE&lid=LSTMOBHDVHGYJM6EEHEEXSF7U&marketplace=FLIPKART&q=OnePlus+Nord+5&store=tyy%2F4io&srno=s_1_3&otracker=search&otracker1=search&fm=Search&iid=eaf4cfd1-26a0-496d-afd5-b90db33be3af.MOBHDVHGYJM6EEHE.SEARCH&ppt=sp&ppn=sp&ssid=f8d7t5m1vk0000001767205439605&qH=5647abdf2906d509">
+            <button>Buy Now</button>
+             </a>
+          </div>
+        </div>
+
+
+
+
+      
+
+
+        <!-- 8 -->
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/61AsNTuJ6mL._SX679_.jpg" alt="Phone" width="250px">
+            <h3>OnePlus 15R | 12GB+256GB | Charcoal Black | World's First Snapdragon® 8 Gen 5 | 7400mAh Battery | Personalised AI | Game-Changing 165Hz Display | IP68 IP69 IP66 & IP69K | 4K 120fps Video</h3>
+            <p>⭐⭐⭐⭐☆ (4.6/5)</p>
+          
+            
+            <div class="incarda">
+              <p>amazon price <br><b>₹47,999 </b></p>
+              <a href="https://www.amazon.in/OnePlus-Charcoal-Snapdragon%C2%AE-Personalised-Game-Changing/dp/B0FZSWZZW2/ref=sr_1_4?crid=1RLFZLB5IQJ8P&dib=eyJ2IjoiMSJ9.5jWPj-LAWTvHCpvYeeS4UbdQMFjzPbWilKHTu5NTVCHyaoDQw4lRgkG5KAKmecbkg07H3mE_xE6iOx5XUyu55oPrg1MP0ajXECRtPw-4IuGrO_MFSmeGXliDzFoOHr9jFWAjfZzWzp6yZunDlocUomY_zDKL1JPTOpDIUP3Dia1DcFeSU-gbDWwniIXLO2ZM9-IALv3SnR1e3lO5Bk-jmeNGVxMVI-GDzmAVPQHXIu0.MDhvs71irAFPC3_LJbT0jMzPU9zVb7WfBMATE9J84z8&dib_tag=se&keywords=phone&qid=1767207764&sprefix=pho%2Caps%2C522&sr=8-4&th=1">
+            <button>Buy Now</button></a>
+            </div>
+
+            <div class="incardf-15">
+             <p>Flipkart price <br><b>₹48,990</b></p>
+             <a href="https://www.flipkart.com/oneplus-15r-5g-charcoal-black-256-gb/p/itmc1c624041ba6c?pid=MOBHGUTYBWQS4QXS&lid=LSTMOBHGUTYBWQS4QXSMK8GW5&marketplace=FLIPKART&q=OnePlus+15R&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=08670927-3d59-400b-9963-ba5e628cf204.MOBHGUTYBWQS4QXS.SEARCH&ppt=sp&ppn=sp&ssid=ogfm9s13pc0000001767208104317&qH=6aada10d3b075511">
+              <button id="fi">Buy Now</button>
+             </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+         <!-- 9 -->
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/61eAwV+gq6L._SX679_.jpg" alt="Oneplus-13s" width="245px" >
+            <h3>Vivo V60 5G (Mist Gray, 12GB RAM, 256GB Storage) with No Cost EMI/Additional Exchange Offers
+
+</h3>
+            <p>⭐⭐⭐⭐☆ (4.5/5)</p>
+            
+            
+            <div class="incarda-15">
+              <p>amazon price <b>₹40,999    </b></p>
+              <a href="https://www.amazon.in/256GB-Storage-Additional-Exchange-Offers/dp/B0FHWMP2LR/ref=sr_1_5?crid=1S4Y8HMUBTS9G&dib=eyJ2IjoiMSJ9.Zp8bR-RWWWiGN_wVYU4DER20d0O_zYX4jecd4xtAft4qVYC_UAGGsEtf0olM0BHzMhxkiJVmZ21UE3CMvLcqpZ_Rg14NZbE9PfjNw1yxRW7G_0z12fKrGmIjGX-bR2UnxJ3RvWLyAxRUsREBQ39OtPajetiUKWp_AV5m66a8djlXeepKl1dImgewd3JssrSKg1mjeZNXLnZQBIbn_fzYBK4B3Zl9zG5ESYYB_1Q_e6k.QqZszVNgU0dkuvWRCU4yEXEV-cOtgBitQFPRdb6VZrQ&dib_tag=se&keywords=vivo&qid=1767208446&sprefix=vivo%2Caps%2C518&sr=8-5&th=1">
+            <button>Buy Now</button>
+              </a>
+
+          
+          </div>
+          <div class="incardf-15">
+            <p>Flipkart price <b>₹39,999</b></p>
+            <a href="https://www.flipkart.com/vivo-v60-5g-mist-gray-256-gb/p/itmf7d9e4b7bf0b2?pid=MOBHEGQSHX7GUZXE&lid=LSTMOBHEGQSHX7GUZXEUFGD9H&marketplace=FLIPKART&q=Vivo+V60+5G+&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=780d8b93-a5da-4296-9ce9-96708d2f901f.MOBHEGQSHX7GUZXE.SEARCH&ppt=sp&ppn=sp&ssid=s1kysoynbk0000001767208530363&qH=c6016d324e4d6de8"><button>Buy Now</button></a>
+          </div>  
+          
+
+
+          
+
+
+
+    </div>
+
+    <p class="disclaimer">
+        *This website contains affiliate links. We may earn a commission at no extra cost to you.*
+    </p>
+</section>
+
+<footer>
+    © 2025 SmartPick Deals | Privacy Policy | Affiliate Disclosure
+</footer>
+
+</body>
+<script src="main.js"></script>
 </html>
+
