@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #div{
+        background-color: red;
+        width: 100px;
+        border-radius: 10px;
+        border: 10px solid black;
+        
+
+       
+    }
+    #div a{
+        background-color: red;
+        width: 100px;
+        text-decoration: none;
+    }
+</style>
+<body>
+    <button id="btn">phone</button>
+    <div id="div"> 
+        <a href="#">iphone</a>
+         <a href="#">samsung</a>
+    </div>
+</body>
+<script>
+    let btn = document.getElementById('btn');
+     let div = document.getElementById('div');
+    btn.addEventListener('click',()=>{
+        
+       // alert('hello')
+        if (div.style.display === "block") {
+      div.style.display = "none";
+      
+    } else {
+      div.style.display = "block";
+    }
+    })
+    
+</script>
+</html>

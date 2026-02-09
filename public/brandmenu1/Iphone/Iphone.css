@@ -98,10 +98,6 @@ tab-750
 
   
  /* for laptop */
- /* @media screen and (min-width: 1024px) and (max-width: 1440px) {
-
-} */
-
  
  div.incarda {
  width: 90px;
@@ -182,8 +178,6 @@ right: -210px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            /* position:absolute;
-            width: 1430px; */
              
         }
 
@@ -229,7 +223,7 @@ right: -210px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
-            width: 80% ;
+            width: 80%;
         }
 
         .card {
@@ -271,151 +265,6 @@ right: -210px;
         .card img{
     width:170px;
   }
-   #phones:hover{
-    transition: 1s;
-     color: black;
-     cursor: pointer;
-   
-   }
-    #laptop:hover{
-    transition: 1s;
-     color: black;
-     cursor: pointer;
-   
-   }
-     #tv:hover{
-    transition: 1s;
-     color: black;
-     cursor: pointer;
-   
-   }
-    #ac:hover{
-    transition: 1s;
-     color: black;
-     cursor: pointer;
-   
-   }
-    #elec:hover{
-    transition: 1s;
-     color: black;
-     cursor: pointer;
-   
-   }
- 
-   
-   
- 
-  
-  #div {
-   
-   
-        display: none;              /* IMPORTANT */
-    position: absolute;
-    flex-direction: row;
-    top: 60px;
-    left: 280px;
-    background-color:black;
-    width: 100px;
-    border-radius: 6px;
-    box-shadow: 0 4px 10px rgba(53, 48, 48, 0.824);
-   cursor: pointer;
-   padding: 5px;
-
-  }
-
-  #laptops{
-       display: none;            
-    position: absolute;
-    flex-direction: row;
-    top: 60px;
-    left: 400px;
-    background-color:black;
-    width: 100px;
-    border-radius: 6px;
-    box-shadow: 0 4px 10px rgba(53, 48, 48, 0.824);
-   cursor: pointer;
-   padding: 5px;
-
-  }
-    #tvdiv{
-       display: none;            
-    position: absolute;
-    flex-direction: row;
-    top: 60px;
-    left: 520px;
-    background-color:black;
-    width: 100px;
-    border-radius: 6px;
-    box-shadow: 0 4px 10px rgba(53, 48, 48, 0.824);
-   cursor: pointer;
-   padding: 5px;
-
-  }
-  #acdiv{
-       display: none;            
-    position: absolute;
-    flex-direction: row;
-    top: 60px;
-    left: 660px;
-    background-color:black;
-    width: 100px;
-    border-radius: 6px;
-    box-shadow: 0 4px 10px rgba(53, 48, 48, 0.824);
-   cursor: pointer;
-   padding: 5px;
-
-  }
-  #elecdiv{
-       display: none;            
-    position: absolute;
-    flex-direction: row;
-    top: 60px;
-    left: 840px;
-    background-color:black;
-    width: 100px;
-    border-radius: 6px;
-    box-shadow: 0 4px 10px rgba(53, 48, 48, 0.824);
-   cursor: pointer;
-   padding: 5px;
-
-  }
-  
-    #laptops a{
-    text-decoration: none;
-    color:white;
-  }
-  #laptops a:hover{
-    color: dodgerblue;
-  }
-  #div a{
-    text-decoration: none;
-    color:white;
-  }
-  #div a:hover{
-    color: dodgerblue;
-  }
-   #tvdiv a{
-    text-decoration: none;
-    color:white;
-  }
-  #tvdiv a:hover{
-    color: dodgerblue;
-  }
-   #acdiv a{
-    text-decoration: none;
-    color:white;
-  }
-  #acdiv a:hover{
-    color: dodgerblue;
-  }
-    #elecdiv a{
-    text-decoration: none;
-    color:white;
-  }
-  #elecdiv a:hover{
-    color: dodgerblue;
-  }
-  
          
       
 
@@ -487,23 +336,29 @@ right: -210px;
 
     /* Products grid */
      .products {
-    width: 100%;
+    width: auto;
+   
     grid-template-columns: 1fr;
+    display: grid;
+    width: 455px;
   }
 
 
     /* Cards */
       .card {
     padding: 15px;
-    width: 130px;
-    height: 300px;
-    display: grid;
+    width: 280px;
+    height: 130px;
+    display: flex;
+   flex-direction: row;
+  
+
 
   }
 
   .card h3,p {
-    font-size: 9px;
-    padding: 2px;
+    font-size: 7px;
+    padding: 1px;
 
 
   }
@@ -526,31 +381,32 @@ right: -210px;
   div.incardf-15,
   div.incarda-air,
   div.incardf-air {
-    display:flex;
-    flex-direction: row;
+    display: flex;
     position: static;
-    width: 40px;
+    width: 60px;
     margin: 10px auto;
     right: auto;
     bottom: auto;
     margin-left: -0px;
-    align-items: center;
 
   }
 
   .card img{
-    width:90px;
+    width:50px;
   }
   div.incarda{
     width: 100px;
     font: 4px;
+    display: flex;
+  
+   
   }
     div.incardf{
     width: 100px;
     font: 4px;
   }
+  
 
 
-  }
-
-
+  
+}

@@ -1,7 +1,11 @@
-//PROCESSING
-let math=math.random(1-9999);
-let myToken;
-if(myToken==math){
 
+    
+ async function auth(req, res, next ) {
+    const user= await req.cookies?.user;
+    if(!user){
+        return res.redirect('/index1.html');
+
+    }
+     next();
 }
-next;
+module.exports={auth};
